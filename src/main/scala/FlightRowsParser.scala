@@ -4,22 +4,17 @@
 import AirportTaskStarter.{AirportTraffic, FlightRow}
 
 class FlightRowsParser {
-
-  def getPlanesAmountArrivedByAirportMap(flightRowsList: List[FlightRow]): collection.mutable.Map[String, Int] = {
-    val plainsByAirport = collection.mutable.Map[String, Int]()
-    flightRowsList.foreach(x => if (plainsByAirport.keySet.contains(x.dest)) {
-      val plainsAmount: Int = plainsByAirport(x.dest) + 1
-      plainsByAirport.update(x.dest, plainsAmount)
-    }
-    else
-      plainsByAirport.update(x.dest, 1))
-    return plainsByAirport
+  def getAirportsNames(flightRows: List[FlightRow]):scala.collection.mutable.Set[String] ={
+    println("Getting airports names")
+    var set = scala.collection.mutable.Set[String]()
+    flightRows.foreach(x => (set += x.origin, set+=x.dest))
+    println("Founded "+set.size+" unique airports")
+    return set
   }
 
-  def getAirportTrafficList(flightRowsList: List[FlightRow], planesToAirportMap: collection.mutable.LinkedHashMap[String, Int]): collection.mutable.Map[String, AirportTraffic] = {
+  def getAirportTrafficList(flightRowsList: List[FlightRow], set : scala.collection.mutable.Set[String]): collection.mutable.Map[String, AirportTraffic] = {
+    println("Calculating amount of arrived and leaved planes per airport")
     val airportTrafficMap = collection.mutable.Map[String, AirportTraffic]()
-    var set = scala.collection.mutable.Set[String]()
-    planesToAirportMap.foreach(x => set += x._1)
     set.foreach(x => airportTrafficMap += (x -> new AirportTraffic(0, 0)))
 
     for (flight <- flightRowsList) {
@@ -30,6 +25,7 @@ class FlightRowsParser {
       trafficValue.leaved += 1
       airportTrafficMap.update(flight.origin, trafficValue)
     }
+    println("Calculation completed")
     return airportTrafficMap
   }
 
