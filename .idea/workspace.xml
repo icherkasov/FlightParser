@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1f00c369-d67b-4cbe-8648-91dc1f83100c" name="Default" comment="">
-      <change type="DELETED" beforePath="C:\Users\Illya\IdeaProjects\FlightParser\palnes_log.csv.gz" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/scala/AirportTaskStarter.scala" afterPath="$PROJECT_DIR$/src/main/scala/AirportTaskStarter.scala" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/scala/FileUtils.scala" afterPath="$PROJECT_DIR$/src/main/scala/FileUtils.scala" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/scala/FlightRowsParser.scala" afterPath="$PROJECT_DIR$/src/main/scala/FlightRowsParser.scala" />
@@ -40,8 +39,8 @@
       <file leaf-file-name="AirportTaskStarter.scala" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/scala/AirportTaskStarter.scala">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.21963824" vertical-offset="170" max-vertical-offset="714">
-              <caret line="15" column="33" selection-start-line="15" selection-start-column="33" selection-end-line="15" selection-end-column="33" />
+            <state vertical-scroll-proportion="0.7906977" vertical-offset="170" max-vertical-offset="714">
+              <caret line="28" column="58" selection-start-line="28" selection-start-column="58" selection-end-line="28" selection-end-column="58" />
               <folding />
             </state>
           </provider>
@@ -618,12 +617,12 @@
       <updated>1437467232184</updated>
       <workItem from="1437467235123" duration="8078000" />
       <workItem from="1437501804980" duration="6167000" />
-      <workItem from="1437508622647" duration="2278000" />
+      <workItem from="1437508622647" duration="2721000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="16523000" />
+    <option name="totallyTimeSpent" value="16966000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
@@ -716,28 +715,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Airports with not null leave-arrive difference.csv">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2805">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-      <provider editor-type-id="com.intellij.database.editor.CsvTableFileEditorProvider">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Planes arrived to airports.csv">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="5236">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-      <provider editor-type-id="com.intellij.database.editor.CsvTableFileEditorProvider">
-        <state />
-      </provider>
-    </entry>
     <entry file="jar://C:/Program Files/Java/jdk1.7.0_79/src.zip!/java/io/FileInputStream.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.3325" vertical-offset="1907" max-vertical-offset="7191">
@@ -764,8 +741,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/scala/AirportTaskStarter.scala">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.21963824" vertical-offset="170" max-vertical-offset="714">
-          <caret line="15" column="33" selection-start-line="15" selection-start-column="33" selection-end-line="15" selection-end-column="33" />
+        <state vertical-scroll-proportion="0.7906977" vertical-offset="170" max-vertical-offset="714">
+          <caret line="28" column="58" selection-start-line="28" selection-start-column="58" selection-end-line="28" selection-end-column="58" />
           <folding />
         </state>
       </provider>

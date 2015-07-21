@@ -26,7 +26,7 @@ object AirportTaskStarter {
       fileUtils.writeNotNullTrafficListToFile(notNullAirportsTrafficPath, airportsTrafficMap)
       println("*****Log parser completed. Results saved*****")
     } catch {
-      case ioe: IOException => println("Source archive can be missing. Can't proceed. Exception caught: " + ioe);
+      case ioe: IOException => println("Source archive may be missing. Can't proceed. Exception caught: " + ioe);
       case e: Exception => println("Exception caught: " + e);
     }
   }
